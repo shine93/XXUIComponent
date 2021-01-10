@@ -8,6 +8,11 @@
 
 import UIKit
 
+//XXTransitionProtocol: present的VC需要遵循
+protocol XXTransitionProtocol {
+    var customTransitionDelegate: UIViewControllerTransitioningDelegate? { get } //这个很重要，要是全局的，要不然transitionDelegete会不生效。
+}
+
 class XXPresentationController: UIPresentationController {
 
     let dimmingView = UIView()
@@ -61,7 +66,6 @@ class XXPresentationController: UIPresentationController {
         }) { (_) in
             self.dimmingView.removeFromSuperview()
         }
-
     }
 
     override func containerViewWillLayoutSubviews() {

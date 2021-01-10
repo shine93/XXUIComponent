@@ -8,9 +8,7 @@
 
 import UIKit
 
-protocol UIViewControllerProtocal {
-    
-}
+
 
 class ViewController: UIViewController {
 

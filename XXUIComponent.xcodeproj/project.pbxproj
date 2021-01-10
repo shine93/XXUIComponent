@@ -20,6 +20,7 @@
 		4754642225A865AD00479C95 /* XXCustomTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */; };
 		4754642825A867AD00479C95 /* XXAlertDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642725A867AD00479C95 /* XXAlertDemoVC.swift */; };
 		4754643025A86A9000479C95 /* XXCustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642F25A86A9000479C95 /* XXCustomAnimator.swift */; };
+		47AD3F2C25AAE3EA002A703D /* XXCustomAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD3F2B25AAE3EA002A703D /* XXCustomAlertVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXCustomTransitionDelegate.swift; sourceTree = "<group>"; };
 		4754642725A867AD00479C95 /* XXAlertDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXAlertDemoVC.swift; sourceTree = "<group>"; };
 		4754642F25A86A9000479C95 /* XXCustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXCustomAnimator.swift; sourceTree = "<group>"; };
+		47AD3F2B25AAE3EA002A703D /* XXCustomAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXCustomAlertVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 				4754641C25A8657800479C95 /* XXPresentationController.swift */,
 				4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */,
 				4754642F25A86A9000479C95 /* XXCustomAnimator.swift */,
+				47AD3F2B25AAE3EA002A703D /* XXCustomAlertVC.swift */,
 			);
 			path = CustomAlert;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4754642225A865AD00479C95 /* XXCustomTransitionDelegate.swift in Sources */,
+				47AD3F2C25AAE3EA002A703D /* XXCustomAlertVC.swift in Sources */,
 				473CFC6E24F8F23F00552FCD /* ViewController.swift in Sources */,
 				473CFC9B24F8F6B400552FCD /* XXAlertViewController.swift in Sources */,
 				4754643025A86A9000479C95 /* XXCustomAnimator.swift in Sources */,

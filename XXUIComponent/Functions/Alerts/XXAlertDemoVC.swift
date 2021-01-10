@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-class XXAlertDemoVC: UIViewController {
+class XXAlertDemoVC: XXCustomAlertVC {
 
     lazy var titleLabel: UILabel = {
         let titleLabel = UILabel()
