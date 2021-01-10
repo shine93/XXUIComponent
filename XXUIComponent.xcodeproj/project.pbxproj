@@ -16,6 +16,10 @@
 		473CFC8124F8F24600552FCD /* XXUIComponentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CFC8024F8F24600552FCD /* XXUIComponentTests.swift */; };
 		473CFC8C24F8F24700552FCD /* XXUIComponentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CFC8B24F8F24700552FCD /* XXUIComponentUITests.swift */; };
 		473CFC9B24F8F6B400552FCD /* XXAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473CFC9A24F8F6B400552FCD /* XXAlertViewController.swift */; };
+		4754641D25A8657800479C95 /* XXPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754641C25A8657800479C95 /* XXPresentationController.swift */; };
+		4754642225A865AD00479C95 /* XXCustomTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */; };
+		4754642825A867AD00479C95 /* XXAlertDemoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642725A867AD00479C95 /* XXAlertDemoVC.swift */; };
+		4754643025A86A9000479C95 /* XXCustomAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4754642F25A86A9000479C95 /* XXCustomAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		473CFC8B24F8F24700552FCD /* XXUIComponentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXUIComponentUITests.swift; sourceTree = "<group>"; };
 		473CFC8D24F8F24700552FCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		473CFC9A24F8F6B400552FCD /* XXAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXAlertViewController.swift; sourceTree = "<group>"; };
+		4754641C25A8657800479C95 /* XXPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXPresentationController.swift; sourceTree = "<group>"; };
+		4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXCustomTransitionDelegate.swift; sourceTree = "<group>"; };
+		4754642725A867AD00479C95 /* XXAlertDemoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXAlertDemoVC.swift; sourceTree = "<group>"; };
+		4754642F25A86A9000479C95 /* XXCustomAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XXCustomAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +142,29 @@
 		473CFC9924F8F65A00552FCD /* Functions */ = {
 			isa = PBXGroup;
 			children = (
-				473CFC9A24F8F6B400552FCD /* XXAlertViewController.swift */,
+				4754641325A85B5200479C95 /* Alerts */,
 			);
 			path = Functions;
+			sourceTree = "<group>";
+		};
+		4754641325A85B5200479C95 /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				4754642625A8675B00479C95 /* CustomAlert */,
+				473CFC9A24F8F6B400552FCD /* XXAlertViewController.swift */,
+				4754642725A867AD00479C95 /* XXAlertDemoVC.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		4754642625A8675B00479C95 /* CustomAlert */ = {
+			isa = PBXGroup;
+			children = (
+				4754641C25A8657800479C95 /* XXPresentationController.swift */,
+				4754642125A865AD00479C95 /* XXCustomTransitionDelegate.swift */,
+				4754642F25A86A9000479C95 /* XXCustomAnimator.swift */,
+			);
+			path = CustomAlert;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4754642225A865AD00479C95 /* XXCustomTransitionDelegate.swift in Sources */,
 				473CFC6E24F8F23F00552FCD /* ViewController.swift in Sources */,
 				473CFC9B24F8F6B400552FCD /* XXAlertViewController.swift in Sources */,
+				4754643025A86A9000479C95 /* XXCustomAnimator.swift in Sources */,
+				4754642825A867AD00479C95 /* XXAlertDemoVC.swift in Sources */,
 				473CFC6A24F8F23F00552FCD /* AppDelegate.swift in Sources */,
 				473CFC6C24F8F23F00552FCD /* SceneDelegate.swift in Sources */,
+				4754641D25A8657800479C95 /* XXPresentationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

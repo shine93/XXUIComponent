@@ -9,10 +9,11 @@
 import UIKit
 
 class XXAlertViewController: UIViewController, UIViewControllerProtocal {
+    private var customTransitionDelegate: UIViewControllerTransitioningDelegate? //这个很重要，要是全局的。
     
     lazy var alertButton: UIButton = {
         let alertButton = UIButton(type: .custom)
-        alertButton.setTitle("alert", for: .normal)
+        alertButton.setTitle("从中间present", for: .normal)
         alertButton.setTitleColor(UIColor.white, for: .normal)
         alertButton.backgroundColor = .blue
         alertButton.layer.cornerRadius = 12
@@ -23,15 +24,18 @@ class XXAlertViewController: UIViewController, UIViewControllerProtocal {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .yellow
+        view.backgroundColor = UIColor.white
         view.addSubview(alertButton)
-        alertButton.frame = CGRect(x: 100, y: 100, width: 80, height: 30)
-        
+        alertButton.frame = CGRect(x: 100, y: 100, width: 200, height: 30)
     }
     
     @objc private func tappedAlertButton() {
-        
+        let toVc = XXAlertDemoVC()
+        toVc.preferredContentSize = CGSize(width: 300, height: 150)
+        customTransitionDelegate = XXCustomTransitionDelegate()
+        toVc.transitioningDelegate = customTransitionDelegate
+        toVc.modalPresentationStyle = .custom
+        present(toVc, animated: true, completion: nil)
     }
 
 }
